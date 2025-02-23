@@ -1,0 +1,45 @@
+@startuml
+interface Notificacao {
+  +enviar(mensagem: string): void
+}
+
+class EmailNotificacao implements Notificacao {
+  +enviar(mensagem: string): void
+}
+
+class SMSNotificacao implements Notificacao {
+  +enviar(mensagem: string): void
+}
+
+class PushNotificacao implements Notificacao {
+  +enviar(mensagem: string): void
+}
+
+abstract class NotificacaoFactory {
+  +criarNotificacao(): Notificacao
+}
+
+class EmailFactory extends NotificacaoFactory {
+  +criarNotificacao(): Notificacao
+}
+
+class SMSFactory extends NotificacaoFactory {
+  +criarNotificacao(): Notificacao
+}
+
+class PushFactory extends NotificacaoFactory {
+  +criarNotificacao(): Notificacao
+}
+
+NotificacaoFactory <|-- EmailFactory
+NotificacaoFactory <|-- SMSFactory
+NotificacaoFactory <|-- PushFactory
+
+Notificacao <|.. EmailNotificacao
+Notificacao <|.. SMSNotificacao
+Notificacao <|.. PushNotificacao
+
+EmailFactory --> EmailNotificacao
+SMSFactory --> SMSNotificacao
+PushFactory --> PushNotificacao
+@enduml
