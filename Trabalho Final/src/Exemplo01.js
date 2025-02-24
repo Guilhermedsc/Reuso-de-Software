@@ -8,19 +8,19 @@ class Notificacao {
 // Implementações concretas
 class EmailNotificacao extends Notificacao {
     enviar(mensagem) {
-        console.log(`📧 Enviando E-mail: ${mensagem}`)
+        console.log(`Enviando E-mail: ${mensagem}`)
     }
 }
 
 class SMSNotificacao extends Notificacao {
     enviar(mensagem) {
-        console.log(`📩 Enviando SMS: ${mensagem}`)
+        console.log(`Enviando SMS: ${mensagem}`)
     }
 }
 
 class PushNotificacao extends Notificacao {
     enviar(mensagem) {
-        console.log(`🔔 Enviando Push Notification: ${mensagem}`)
+        console.log(`Enviando Push Notification: ${mensagem}`)
     }
 }
 

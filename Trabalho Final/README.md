@@ -30,8 +30,8 @@ Esse padrão será demonstrado com três exemplos:
 A seguir, três exemplos práticos do **Factory Method** aplicados a diferentes cenários.
 
 -   [Exemplo 01: Sistema de Notificações](src/Exemplo01.js)
--   [Exemplo 2: Conexão com Bancos de Dados Diferentes](src/Exemplo02.js)
--   [Exemplo 3: Geração de Relatórios](src/Exemplo03.js)
+-   [Exemplo 02: Conexão com Bancos de Dados Diferentes](src/Exemplo02.js)
+-   [Exemplo 03: Geração de Relatórios](src/Exemplo03.js)
 
 ### 5. Conclusão
 

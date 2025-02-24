@@ -8,19 +8,19 @@ class Relatorio {
 // Implementações concretas
 class PDFRelatorio extends Relatorio {
     gerar(dados) {
-        console.log(`📄 Gerando relatório em PDF com dados: ${JSON.stringify(dados)}`)
+        console.log(`Gerando relatório em PDF com dados: ${JSON.stringify(dados)}`)
     }
 }
 
 class CSVRelatorio extends Relatorio {
     gerar(dados) {
-        console.log(`📊 Gerando relatório em CSV com dados: ${JSON.stringify(dados)}`)
+        console.log(`Gerando relatório em CSV com dados: ${JSON.stringify(dados)}`)
     }
 }
 
 class JSONRelatorio extends Relatorio {
     gerar(dados) {
-        console.log(`📜 Gerando relatório em JSON com dados: ${JSON.stringify(dados)}`)
+        console.log(`Gerando relatório em JSON com dados: ${JSON.stringify(dados)}`)
     }
 }
 

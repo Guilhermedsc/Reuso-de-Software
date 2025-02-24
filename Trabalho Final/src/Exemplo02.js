@@ -8,19 +8,19 @@ class Database {
 // Implementações concretas
 class MySQL extends Database {
     conectar() {
-        console.log("🔗 Conectando ao MySQL...")
+        console.log("Conectando ao MySQL...")
     }
 }
 
 class PostgreSQL extends Database {
     conectar() {
-        console.log("🔗 Conectando ao PostgreSQL...")
+        console.log("Conectando ao PostgreSQL...")
     }
 }
 
 class MongoDB extends Database {
     conectar() {
-        console.log("🔗 Conectando ao MongoDB...")
+        console.log("Conectando ao MongoDB...")
     }
 }
 
